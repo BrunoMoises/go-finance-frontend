@@ -29,25 +29,25 @@ export default function ListAccounts() {
     return (
         <S.Wrapper>
             <S.Button>
-                <Button>
+                <Button isFilter>
                     Adicionar
                 </Button>
             </S.Button>
             <S.Filters>
                 <S.Filter>
-                    <Input label='Data inicial' type='date' name='initialDate' />
+                    <Input label='Data inicial' type='date' name='initialDate' isFilter />
                 </S.Filter>
                 <S.Filter>
-                    <Input label='Data final' type='date' name='finalDate' />
+                    <Input label='Data final' type='date' name='finalDate' isFilter />
                 </S.Filter>
                 <S.Filter>
-                    <Input label='Title' type='text' placeholder='Titulo' name='title' />
+                    <Input label='Title' type='text' placeholder='Titulo' name='title' isFilter />
                 </S.Filter>
                 <S.Filter>
-                    <Input label='Description' type='text' placeholder='Description' name='description' />
+                    <Input label='Description' type='text' placeholder='Description' name='description' isFilter />
                 </S.Filter>
                 <S.Filter>
-                    <Input label='Category' type='text' placeholder='Category' name='category' />
+                    <Input label='Category' type='text' placeholder='Category' name='category' isFilter />
                 </S.Filter>
             </S.Filters>
             <TableContainer component={Paper}>

@@ -4,11 +4,12 @@ import * as S from './styles'
 export type ButtonProps = {
     children?: string
     disabled?: boolean
+    isFilter?: boolean
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
-export default function Button({ children, disabled = false, ...buttonHTMLProps }: ButtonProps) {
+export default function Button({ children, disabled = false, isFilter = false, ...buttonHTMLProps }: ButtonProps) {
     return (
-        <S.ButtonWrapper disabled={disabled} {...buttonHTMLProps} >
+        <S.ButtonWrapper disabled={disabled} isFilter={isFilter} {...buttonHTMLProps} >
             {children}
         </S.ButtonWrapper>
     )

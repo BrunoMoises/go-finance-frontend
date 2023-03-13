@@ -29,7 +29,7 @@ export const InputWrapper = styled.div`
 `
 
 export const Input = styled.input<InputProps>`
-    ${({ theme, isFilter }) => css`
+    ${({ theme }) => css`
         padding: 20px 120px 20px 10px;
         border: 1px solid ${theme.colors.lightGray};
         background-color: ${theme.colors.white};
@@ -37,9 +37,5 @@ export const Input = styled.input<InputProps>`
         border-radius: 7px;
         height: fit-content;
         margin: 5px 0;
-
-        ${isFilter && css`
-            padding: 14px 40px 14px 10px;
-        `}
     `}
 `

@@ -4,15 +4,14 @@ import * as S from './styles'
 export type InputProps = {
     label?: string
     placeholder?: string
-    isFilter?: boolean
 } & InputHTMLAttributes<HTMLInputElement>
 
-export default function Input({ name, label, placeholder, isFilter, type }: InputProps) {
+export default function Input({ name, label, placeholder }: InputProps) {
     return (
         <S.Wrapper>
             <S.Label htmlFor={name}>{label}</S.Label>
             <S.InputWrapper>
-                <S.Input placeholder={placeholder} name={name} type={type} isFilter={isFilter} />
+                <S.Input placeholder={placeholder} />
             </S.InputWrapper>
         </S.Wrapper>
     )
