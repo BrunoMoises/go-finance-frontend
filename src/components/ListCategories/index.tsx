@@ -9,6 +9,11 @@ import * as S from './styles'
 import Button from '@/components/Button'
 import Input from '@/components/Input'
 
+export type ListCategoriesProps = {
+    openModal: (value: boolean) => void
+}
+
+
 function createData(
     title: string,
     description: string
@@ -22,11 +27,11 @@ const rows = [
     createData('Frozen yoghurt', 'description'),
 ];
 
-export default function ListCategories() {
+export default function ListCategories({ openModal }: ListCategoriesProps) {
     return (
         <S.Wrapper>
             <S.Button>
-                <Button isFilter>
+                <Button isFilter onClick={() => openModal(true)}>
                     Adicionar
                 </Button>
             </S.Button>
@@ -45,7 +50,7 @@ export default function ListCategories() {
                         <Input label='Description' type='text' placeholder='Description' name='description' isFilter />
                     </S.Filter>
                 </S.Filters>
-                <TableContainer component={Paper} sx={{  mt: 1 }}>
+                <TableContainer component={Paper} sx={{ mt: 1 }}>
                     <Table sx={{ minWidth: 650 }} aria-label="simple table">
                         <TableHead>
                             <TableRow>

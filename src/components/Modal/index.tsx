@@ -9,10 +9,9 @@ export type ModalProps = {
 }
 
 export default function Modal({ title, children, isOpen, getValueOpen }: ModalProps) {
-    const [isModalOpen, setModalOpen] = useState<boolean>(isOpen)
     return (
         <>
-            {isModalOpen && (
+            {isOpen && (
                 <S.Wrapper>
                     <S.Header>
                         <S.Title>
