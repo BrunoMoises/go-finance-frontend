@@ -72,7 +72,7 @@ export default function ListAccounts() {
                                     <TableCell align="right" sx={{ fontSize: 15 }}>{row.value}</TableCell>
                                     <TableCell align="right" sx={{ fontSize: 15 }}>{row.date}</TableCell>
                                     <TableCell align="left" sx={{ fontSize: 15 }}>
-                                        <S.IconDelete size={20} onClick={() => console.log('delete')} />
+                                        <S.IconDelete size={30} onClick={() => console.log('delete')} />
                                     </TableCell>
                                 </TableRow>
                             ))}
