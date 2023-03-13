@@ -1,12 +1,32 @@
 import Button from '@/components/Button'
 import Card from '@/components/Card'
+import { VictoryPie } from 'victory'
 import * as S from './styles'
 
 const Main = () => (
   <S.Wrapper>
     <S.Main>
       <S.Graph>
-        graph
+        <VictoryPie
+          padAngle={4}
+          animate={{
+            duration: 2000
+          }}
+          data={[
+            { x: "A Pagar", y: 20 },
+            { x: "A Receber", y: 80 }
+          ]}
+          innerRadius={100}
+          colorScale={["tomato", "orange"]}
+          style={{
+            data: {
+              fillOpacity: 0.9, stroke: "#fff", strokeWidth: 3
+            },
+            labels: {
+              fill: "#000"
+            }
+          }}
+        />
       </S.Graph>
       <S.Cards>
         <Card title='Saldo a pagar' count='120.55' />
