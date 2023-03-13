@@ -27,3 +27,12 @@ export const IconDelete = styled(AiOutlineDelete)`
     `}
     cursor: pointer;
 `
+
+export const FiltersAndDataTable = styled.div`
+  ${({ theme })=> css`
+    background: ${theme.colors.white};
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  `}
+`
