@@ -1,41 +1,38 @@
+import { AiOutlineDelete } from 'react-icons/ai'
 import styled, { css } from 'styled-components'
-import { InputProps } from '.'
 
-export const Wrapper = styled.main.attrs({
-    id: "WrapperInput"
-})`
+export const Wrapper = styled.main`
+  display: flex;
+  flex-direction: column;
 `
 
-export const Label = styled.label`
-    ${({ theme }) => css`
-        font-family: ${theme.font.family};
-        font-style: normal;
-        font-weight: ${theme.font.bold};
-        font-size: 16px;
-        line-height: 25px;
-        display: flex;
-        align-items: center;
-        color: ${theme.colors.black};
+export const Filters = styled.div`
+  display: flex;
+  flex-direction: row;
+`
+
+export const Filter = styled.div`
+  margin-left: 5px;
+`
+
+export const Button = styled.div`
+  display:flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+`
+
+export const IconDelete = styled(AiOutlineDelete)`
+    ${({ theme })=> css`
+        color: ${theme.colors.tomato};
     `}
+    cursor: pointer;
 `
 
-export const InputWrapper = styled.div`
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-`
-
-export const Input = styled.input<InputProps>`
-    ${({ theme }) => css`
-        padding: 20px 120px 20px 10px;
-        border: 1px solid ${theme.colors.lightGray};
-        background-color: ${theme.colors.white};
-        box-sizing: border-box;
-        border-radius: 7px;
-        height: fit-content;
-        margin: 5px 0;
-    `}
+export const FiltersAndDataTable = styled.div`
+  ${({ theme })=> css`
+    background: ${theme.colors.white};
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  `}
 `
