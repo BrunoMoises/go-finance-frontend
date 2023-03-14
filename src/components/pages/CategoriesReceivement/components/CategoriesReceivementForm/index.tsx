@@ -9,9 +9,11 @@ export default function CategoriesReceivementForm() {
                 <Input name='title' label='Titulo' placeholder='Titulo da categoria...' />
                 <Input name='description' label='Descrição' placeholder='Digite a descrição...' />
             </S.Inputs>
-            <Button>
-                Salvar
-            </Button>
+            <S.Buttons>
+                <Button>
+                    Salvar
+                </Button>
+            </S.Buttons>
         </S.Container>
     )
 }
