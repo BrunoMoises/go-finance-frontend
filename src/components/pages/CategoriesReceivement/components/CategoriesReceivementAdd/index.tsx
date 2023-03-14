@@ -6,14 +6,16 @@ export type CategoriesReceivementAddProps = {
     getValueOpen: (value: boolean) => void
 }
 
-const CategoriesReceivementAdd = ({ isOpen, getValueOpen }: CategoriesReceivementAddProps) => (
-    <Modal
-        title="Adicionar novo recebimento"
-        isOpen={isOpen}
-        getValueOpen={getValueOpen}
-    >
-        <CategoriesReceivementForm />
-    </Modal>
-)
+const CategoriesReceivementAdd = ({ isOpen, getValueOpen }: CategoriesReceivementAddProps) => {
+    return (
+        <Modal
+            title="Adicionar novo recebimento"
+            isOpen={isOpen}
+            getValueOpen={getValueOpen}
+        >
+            <CategoriesReceivementForm />
+        </Modal>
+    )
+}
 
 export default CategoriesReceivementAdd
