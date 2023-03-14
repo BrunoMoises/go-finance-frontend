@@ -6,7 +6,7 @@ export default function CategoriesReceivementForm() {
     return (
         <S.Container>
             <S.Inputs>
-                <Input name='title' label='Titulo' placeholder='Digite o titulo da categoria...' />
+                <Input name='title' label='Titulo' placeholder='Titulo da categoria...' />
                 <Input name='description' label='Descrição' placeholder='Digite a descrição...' />
             </S.Inputs>
             <Button>

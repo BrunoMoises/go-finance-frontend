@@ -4,8 +4,8 @@ import { RiMoneyDollarCircleLine } from 'react-icons/ri'
 export const Wrapper = styled.div.attrs({
     'data-testid': 'WrapperCard'
 })`
-    height: 120px;
-    width: 300px;
+    height: 55vh;
+    width: 60vw;
     ${({ theme })=> css`
         background: ${theme.colors.white};
     `}
@@ -16,6 +16,7 @@ export const Wrapper = styled.div.attrs({
     justify-content: center;
     margin-top: 10px;
     border-radius: 7px;
+    position: relative;
 `
 
 export const Header = styled.div`
