@@ -6,7 +6,7 @@ export const Wrapper = styled.div.attrs({
     'data-testid': 'WrapperCard'
 })`
     height: 100%;
-    width: 70vw;
+    width: 75vw;
     ${({ theme })=> css`
         background: ${theme.colors.white};
     `}
